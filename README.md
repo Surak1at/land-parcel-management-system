@@ -1,16 +1,36 @@
-# React + Vite
+🌐 Live Demo & GitHub Settings
+Deploy Website: https://land-parcel-management-system.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📍 Land Parcel Management System (ระบบจัดการแปลงที่ดิน)
+แอปพลิเคชันสำหรับวาดและบริหารจัดการข้อมูลแปลงที่ดินบนแผนที่ พัฒนาด้วยเทคโนโลยีสมัยใหม่ เน้นความง่ายในการใช้งาน (Simple & Intuitive) แต่ครบถ้วนด้วยฟังก์ชันการคำนวณเชิงพื้นที่ระดับสากล
 
-Currently, two official plugins are available:
+✨ คุณสมบัติของแอป (Features)
+Flexible Boundary Drawing: ผู้ใช้สามารถวาดพิกัดบนแผนที่ได้อย่างอิสระโดยไม่จำกัดจำนวนจุด เพื่อความละเอียดแม่นยำสูงสุดในการครอบคลุมพื้นที่
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Professional Area Calculation: คำนวณพื้นที่อัตโนมัติทันทีที่บันทึก โดยใช้ Library Turf.js ซึ่งเป็นมาตรฐานในงาน Geospatial
 
-## React Compiler
+Satellite Snapshot with Overlay: ระบบดึงภาพถ่ายดาวเทียมจริงของพื้นที่มาแสดงผล พร้อมวาดเส้น Polygon ขอบเขตที่ดินทับบนรูปภาพ เพื่อให้ง่ายต่อการระบุตำแหน่ง
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Inspection Mode & FlyTo: ฟีเจอร์ "ดูบนแผนที่" ที่จะเลื่อน (Fly) และซูมไปยังแปลงที่ดินนั้นๆ พร้อมระบบ Inspection Mode ที่จะล็อกการวาดชั่วคราวและไฮไลท์แปลงที่เลือก เพื่อประสบการณ์การใช้งานที่ลื่นไหล
 
-## Expanding the ESLint configuration
+Modern UI/UX: แจ้งเตือนและรับข้อมูลผ่าน SweetAlert2 และรองรับการแสดงผลแบบ Responsive (มือถือ/แท็บเล็ต)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠 การติดตั้งและใช้งาน (Installation & Setup)
+1. การติดตั้ง (Local Environment)
+โปรเจคนี้พัฒนาด้วย Vite + React กรุณารันคำสั่งตามลำดับดังนี้:
+# 1. ติดตั้ง Dependencies
+npm install
+
+# 2. เริ่มต้นการทำงาน (Development Mode)
+npm run dev
+
+2. วิธีใช้งานเบื้องต้น
+การเพิ่มข้อมูล: คลิกบนแผนที่อย่างน้อย 3-4 จุดเพื่อกำหนดขอบเขตพื้นที่ที่ต้องการ
+
+การบันทึก: กดปุ่ม "บันทึกแปลงที่ดิน" ด้านบน กรอกชื่อและรายละเอียดในป๊อปอัพที่ปรากฏขึ้น
+
+การตรวจสอบ: ข้อมูลจะถูกแสดงที่แถบด้านข้าง (Sidebar) พร้อมรูปภาพและขนาดพื้นที่
+
+การดูตำแหน่ง: กดปุ่ม "🔍 ดูบนแผนที่" เพื่อเลื่อนไปยังพิกัดนั้น และกด "ออกจากโหมดดูแผนที่" เพื่อกลับมาวาดใหม่
+
+👨‍💻 พัฒนาโดย: [Surakiat (Hurray)]
