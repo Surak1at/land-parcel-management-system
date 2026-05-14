@@ -18,11 +18,10 @@ Modern UI/UX: แจ้งเตือนและรับข้อมูลผ
 🛠 การติดตั้งและใช้งาน (Installation & Setup)
 1. การติดตั้ง (Local Environment)
 โปรเจคนี้พัฒนาด้วย Vite + React กรุณารันคำสั่งตามลำดับดังนี้:
-# 1. ติดตั้ง Dependencies
-npm install
-
-# 2. เริ่มต้นการทำงาน (Development Mode)
-npm run dev
+ 1. ติดตั้ง Dependencies
+  npm install
+ 2. เริ่มต้นการทำงาน (Development Mode)
+  npm run dev
 
 2. วิธีใช้งานเบื้องต้น
 การเพิ่มข้อมูล: คลิกบนแผนที่อย่างน้อย 3-4 จุดเพื่อกำหนดขอบเขตพื้นที่ที่ต้องการ
