@@ -1,0 +1,62 @@
+/* Layout หลัก */
+.app-container {
+  display: flex;
+  flex-direction: row; /* แนวนอนบน Desktop */
+  height: 100vh;
+}
+
+/* Navbar บนแผนที่ */
+.map-navbar {
+  height: 50px;
+  background: #2c3e50;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.map-navbar button {
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.map-navbar button.primary {
+  background: #27ae60;
+  color: white;
+}
+
+/* Sidebar Responsive */
+.sidebar {
+  width: 350px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+/* สำหรับมือถือ */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* แนวตั้งบนมือถือ */
+  }
+  .sidebar {
+    width: 100%;
+    height: 40%; /* แบ่งพื้นที่ให้ Sidebar ด้านล่าง */
+    border-right: none;
+    border-top: 1px solid #ddd;
+  }
+  .map-wrapper {
+    height: 60%;
+  }
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.btn-view { grid-column: span 2; background: #3498db; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; }
+.btn-edit { background: #f39c12; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; }
+.btn-delete { background: #e74c3c; color: white; border: none; padding: 8px; border-radius: 4px; cursor: pointer; }
